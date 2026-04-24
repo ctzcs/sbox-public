@@ -20,7 +20,7 @@ internal class LocalFileSystem : BaseFileSystem
 		// windows + macos do the normal path
 		else
 		{
-			Physical = new Zio.FileSystems.PhysicalFileSystem();	
+			Physical = new Zio.FileSystems.PhysicalFileSystem();
 		}
 
 		var rootPath = Physical.ConvertPathFromInternal( rootFolder );
